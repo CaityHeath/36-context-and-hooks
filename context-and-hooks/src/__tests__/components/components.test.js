@@ -11,7 +11,7 @@ describe('<Index>', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders an h1', () => {
+  it('renders the count', () => {
     let componenet = mount(<App/>);
     expect(componenet.find('h1').text()).toContain(0);
   });
@@ -29,6 +29,4 @@ describe('<Index>', () => {
     increment.simulate('click');
     expect(component.find('h1').text()).toContain(-1);
   });
-  
-
 });
