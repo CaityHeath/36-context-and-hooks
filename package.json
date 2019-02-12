@@ -5,11 +5,13 @@
   "dependencies": {
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "jsdoc": "^3.5.5",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.5"
   },
   "scripts": {
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

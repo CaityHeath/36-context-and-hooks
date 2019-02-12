@@ -10,10 +10,18 @@ class Counter extends React.Component{
       decrement: this.decrement
     }
   }
+  /**
+   *Increments count in state.
+   *
+   */
   increment = () => {
     let up = this.state.count + 1;
     this.setState({count: up});
   }
+  /**
+   *Decrements count in state. 
+   *
+   */
   decrement = () => {
     let down = this.state.count -1
     this.setState({count: down});
