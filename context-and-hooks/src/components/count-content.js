@@ -9,8 +9,8 @@ export default (props) => {
         return(
           <div>
             <h1> {context.count} </h1>
-            <button onClick={() => context.increment()}>Increment</button>
-            <button onClick={() => context.decrement()}>Decrement</button>
+            <button id="increment" onClick={() => context.increment()}>Increment</button>
+            <button id="decrement" onClick={() => context.decrement()}>Decrement</button>
           </div>
         );
       }}
