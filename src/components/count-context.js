@@ -7,7 +7,8 @@ class Counter extends React.Component{
     this.state = {
       count: 0,
       increment: this.increment,
-      decrement: this.decrement
+      decrement: this.decrement,
+      polarity: null
     }
   }
   /**
@@ -26,6 +27,8 @@ class Counter extends React.Component{
     let down = this.state.count -1
     this.setState({count: down});
   }
+
+  
 
   render() {
     return (
